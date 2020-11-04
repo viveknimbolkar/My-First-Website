@@ -1,0 +1,132 @@
+@keyframes fade-right{
+    from{
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes down{
+    from{
+        transform: translateY(0px);
+        opacity: 0;
+        box-shadow: none;
+    }
+    to{
+        box-shadow:0px 4px 15px 5px black;
+        transform: translateY(175px);
+        opacity: 1;
+    }
+}
+
+@keyframes error{
+    from{
+        background-color: rgb(248, 248, 248);
+        color: rgb(255, 0, 0); 
+    }
+    to{
+        background-color: red;
+        color: white;
+    }
+}
+
+@keyframes btn{
+    from{
+
+    }
+    to{
+        width: 350px;
+    }
+}
+
+@keyframes anim{
+    0%{
+        background-position: 0%;
+        width: 100%;
+    }
+    100%{
+      background-position: 500%;
+      width: 100%;
+    }
+}
+
+@keyframes link{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes crd-anim{
+    from{
+        position: relative;
+        top: 100%;
+    }
+    to{
+        position: relative;
+        top: 2%;
+    }
+}
+
+@keyframes copy{
+    0%{
+        color: rgb(255, 2, 2);
+    }
+    25%{
+        color: rgb(255, 255, 255);
+    }
+    50%{
+        color: rgb(255, 0, 128);
+    }
+    75%{
+        color: rgb(253, 0, 253);
+    }
+    100%{
+        color: rgb(255, 0, 0);
+    }
+}
+@keyframes loading{
+    0%{
+        width: 0%; 
+    }
+    10%{
+        width: 10%; 
+    }
+    20%{
+        width: 25%; 
+    }
+    30%{
+        width: 30%; 
+    }
+    40%{
+        width: 45%; 
+    }
+    50%{
+        width: 50%; 
+    }
+    60%{
+        width: 60%; 
+    }
+    70%{
+        width:74%; 
+    }
+    80%{
+        width: 88%; 
+    }
+    90%{
+        width: 90%; 
+    }
+    95%{
+        width: 95%; 
+    }
+    98%{
+        width: 98%; 
+    }
+    100%{
+        width: 100%; 
+        background-color: rgb(0, 255, 0);
+    }
+}

@@ -1,0 +1,364 @@
+body{
+    margin: 0px;
+    padding: 0px;
+} 
+@font-face{
+    src: url('../fonts/Alegreya-Medium.ttf');
+    font-family: Alegreya-Medium;
+    src: url('../fonts/AdventPro-ExtraLight.ttf');
+    font-family: AdventPro-ExtraLight;
+    src: url('../fonts/Asap-Bold.ttf');
+    font-family: Asap-Bold; 
+}
+/* ---------------------------------index.html-------------------*/
+nav{
+    width: 100%;
+    height: 60px;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color: rgb(35, 34, 37);
+    position: fixed;
+    top: 0px;
+}
+nav ul{
+    margin-left: 100px;
+}
+ nav ul li{
+    animation-name: link;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-iteration-count:1;
+    animation-delay: 2s;
+    display: inline;
+    margin-right: 100px;
+ }
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+nav ul li a:hover{
+    color: rgb(73, 152, 255);
+}
+.container-one{
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(90deg,rgb(153, 0, 255),rgb(0, 110, 255),rgb(0, 255, 170),rgb(153, 0, 255));
+    background-size: 300%;
+    animation-name: anim;
+    animation-direction: alternate;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}
+.container-one h1{
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 60px;
+    padding-top: 100px;
+    padding-left: 18%;
+    animation-name: fade-right;
+    animation-direction: alternate;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+.card{
+    width: 200px;
+    height: 350px;
+    background-size: 100%;   
+    overflow: hidden;
+    transition: .5s;
+    float: left;
+    border-radius: 7px;
+}
+.card:hover{
+    transition: .5s;
+    box-shadow: 5px 10px 20px 5px rgb(65, 65, 65);
+    background-size: 110%;
+}
+.subcard{
+    position: relative;
+    top: 80%;
+    width: 90%;
+    overflow: hidden;
+    margin-left: 20px;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    transition: .7s;
+}
+.subcard:hover{
+    position: relative;
+    top: 2%;
+    transition: .7s;
+    font-weight: 300;
+}
+.subcard h2{
+   font-weight: 900;
+}
+.card-1{
+    background-image: url('../images/back-1.jpg');
+    transform: translateX(70px) translateY(30px);
+    animation-name: crd-anim;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+.card-2{
+    transform: translateX(100px) translateY(30px);
+    background-image: url('../images/back-2.jpg');
+    animation-name: crd-anim;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+.card-3{
+    transform: translateX(130px) translateY(30px);
+    background-image: url('../images/back-3.jpg');
+    animation-name: crd-anim;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+.card-4{
+    transform: translateX(160px) translateY(30px);
+    background-image: url('../images/back-4.jpg');
+    animation-name: crd-anim;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+/*       The starting of Second container*/
+.container-two{
+    width: 100%;
+    height: 1600px;
+}
+.sub-div-ctwo{
+    height: auto;
+    width: 210px;
+    float: left;
+    margin-right: 80px;
+}
+.sub-div-ctwo img{
+    background-size: 100%;
+    border-radius: 90px;
+    width: 100%;
+    height: 230px;
+    border: 4px solid rgb(46, 204, 209);
+}
+.img-body{
+    height: auto;
+    width: 100%;
+    text-align: center;
+    margin-top:-15px;
+   
+}
+.img-body h2{
+    font-size: 40px;
+    color: rgb(36, 37, 39);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.img-body p{
+    font-family: sans-serif;
+    color: rgb(97, 97, 97);
+    margin-top: -20px;
+    justify-content: start;
+}
+.ctwo-1{
+    transform: translateX(100px) translateY(100px);
+}
+.ctwo-2{
+    transform: translateX(100px) translateY(100px);
+}
+.ctwo-3{
+    transform: translateX(100px) translateY(100px);
+}
+.ctwo-4{
+    transform: translateX(380px) translateY(150px);
+    float: none;
+}
+.ctwo-5{
+    transform: translateX(100px) translateY(200px);
+}
+.ctwo-6{
+    transform: translateX(100px) translateY(200px);
+}
+
+.ctwo-7{
+    transform: translateX(100px) translateY(200px);
+}
+.sociallinks{
+    height: 265px;
+    width: 40px;
+    float: none;
+    transform: translateY(175px);
+    position: fixed;
+    background-color: rgb(110, 64, 37);
+    box-shadow: 0px 4px 15px 5px black;
+    animation-name: down;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+.sociallinks img{
+    background-size: 100%;
+    width: 100%;
+}
+/*--------------------Third container---------------*/
+.container-three{
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 255, 128, 0.856);
+}
+.searchbox{
+    width:450px;
+    height: 50px;
+    transform: translateX(70%) translateY(50px);
+}
+.searchbox input{
+    width: 350px;
+    height: 50px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.486);
+    font-size: 20px;
+    color: rgb(53, 53, 53);
+    padding-left: 10px;
+}
+.searchbox img{
+    width: 40px;
+    height: 40px;
+    transform: translateY(15px);
+}
+.container-err{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(161, 161, 161);
+}
+.warning-div{
+    background-color: red;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    animation-name: error;
+    animation-duration: .1s;
+    animation-iteration-count: 10;
+    animation-direction: alternate;
+}
+.warn-div{
+    color: rgb(109, 252, 192);
+    text-align: center;
+    font-family: fantasy;
+    font-size: 20px;
+}
+.container-err p{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+}
+.container-err button{
+    width: 300px;
+    height: 50px;
+    background-color: rgb(129, 84, 143);
+    transition: .5s;
+    transform: translateX(115%);    
+    border:none;
+    color: rgb(8, 8, 8);
+    font-size: 20px;
+    font-family: sans-serif;
+    
+}
+.container-err button:hover{
+    box-shadow: 0px 4px 10px 3px white;
+    color: white;
+    background-color: rgb(177, 30, 221);
+    border: none;
+}
+.adrs{
+    transform: translateX(70px) translateY(30%);
+}
+.adrs h3{
+    font-family: sans-serif;
+    font-size: 30px;
+    color: rgb(41, 41, 41);
+}
+address{
+    font-family: sans-serif;
+    color: rgb(36, 36, 36);
+    font-size:18px;
+    width: 200px;
+}
+.more{
+    transform: translateX(750px) translateY(-330px);
+    width: 200px;
+}
+.more h1{
+    font-family: sans-serif;
+    font-size: 30px;
+    color: rgb(41, 41, 41);
+}
+.more a{
+    color: rgb(0, 134, 252);
+    font-size: 18px;
+    text-decoration: none;
+}
+.more a:hover{
+    color:rgb(0, 25, 252);
+}
+.subscribe{
+    transform: translateX(350px) translateY(-100px);
+    background-color: rgb(156, 156, 156);
+    width: 300px;
+    height: 200px;
+    transition: 1s;
+}
+.subscribe h2{
+    font-size: 30px;
+    color: rgb(49, 49, 49);
+    font-family: sans-serif;
+    padding-left: 10px;
+}
+.subscribe input{
+    width: 250px;
+    height: 40px;
+    font-size: 18px;
+    margin-left: 20px;
+    text-align: center;
+    color: rgb(138, 138, 138);
+}
+.subscribe button{
+    transform: translateX(20px);
+    background-color: rgb(182, 0, 76);
+    border: none;
+    color: aliceblue;
+    height: 40px;
+    width: 250px;
+    font-size: 16px;
+}
+.subscribe button:hover{
+    box-shadow: 1px 5px 20px 1px rgb(252, 252, 252);
+    transition: .5s;
+    background-color: rgb(255, 0, 106);
+}
+footer{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    animation-name: copy;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform: translateY(-200px);
+}
+
+
+
+/*-----------------------------------About.html----------------------------------------------------*/
